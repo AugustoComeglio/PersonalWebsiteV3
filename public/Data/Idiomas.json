@@ -1,0 +1,20 @@
+[
+  {
+    "id": 3,
+    "Idioma": "Español",
+    "Src": "/Images/Banderas/Flag-España.png",
+    "Nivel": "C2"
+  },
+  {
+    "id": 2,
+    "Idioma": "Inglés",
+    "Src": "/Images/Banderas/Flag-Usa.png",
+    "Nivel": "B1"
+  },
+  {
+    "id": 1,
+    "Idioma": "Italiano",
+    "Src": "/Images/Banderas/Flag-Italia.png",
+    "Nivel": "A2"
+  }
+]

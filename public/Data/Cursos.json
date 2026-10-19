@@ -1,0 +1,138 @@
+[
+  {
+    "id": 15,
+    "Titulo": "Build Frontier Firm productivity with Work IQ, Copilot, & agents",
+    "Institucion": "Microsoft",
+    "SrcIstitucion": "/Images/Cursos/microsoft.svg",
+    "Expedicion": "Julio 2026",
+    "CredentialId": "bacce3fc-419d-4ed1-9a86-077dee509385",
+    "SrcCertificado": "https://www.credly.com/badges/bacce3fc-419d-4ed1-9a86-077dee509385",
+    "Status": "Done"
+  },
+  {
+    "id": 14,
+    "Titulo": "Business Case Builder & Agents Value Envisioning Tool - Proficient",
+    "Institucion": "Microsoft",
+    "SrcIstitucion": "/Images/Cursos/microsoft.svg",
+    "Expedicion": "Noviembre 2025",
+    "SrcCertificado": "https://www.credly.com/badges/afea509e-1fb2-44c4-a488-c9cb94d977d8/public_url",
+    "Status": "Done"
+  },
+  {
+    "id": 13,
+    "Titulo": "Copilot Business Value - Proficient",
+    "Institucion": "Microsoft",
+    "SrcIstitucion": "/Images/Cursos/microsoft.svg",
+    "Expedicion": "Noviembre 2025",
+    "SrcCertificado": "https://www.credly.com/badges/6bfcdf83-ffe0-493b-9f9f-f8dfff3b01c6/public_url",
+    "Status": "Done"
+  },
+  {
+    "id": 12,
+    "Titulo": "Python Essentials 1",
+    "Institucion": "Cisco",
+    "SrcIstitucion": "/Images/Cursos/cisco_light.svg",
+    "Expedicion": "-",
+    "SrcCertificado": "/Images/img-no-dispo.jpg",
+    "Status": "In Progress"
+  },
+  {
+    "id": 11,
+    "Titulo": "Introducción a la programación con Python",
+    "Institucion": "Santander",
+    "SrcIstitucion": "/Images/Cursos/logo-santander.png",
+    "Expedicion": "Noviembre 2025",
+    "SrcCertificado": "/Images/Certificados/Santander-Python.jpg",
+    "Status": "Done"
+  },
+  {
+    "id": 10,
+    "Titulo": "Liderazgo",
+    "Institucion": "Santander",
+    "SrcIstitucion": "/Images/Cursos/logo-santander.png",
+    "Expedicion": "-",
+    "SrcCertificado": "/Images/img-no-dispo.jpg",
+    "Status": "In Progress"
+  },
+  {
+    "id": 9,
+    "Titulo": "Excel - de básico a Intermedio",
+    "Institucion": "Santander",
+    "SrcIstitucion": "/Images/Cursos/logo-santander.png",
+    "Expedicion": "Octubre 2025",
+    "SrcCertificado": "/Images/Certificados/Santander-Excel.jpg",
+    "Status": "Done"
+  },
+  {
+    "id": 8,
+    "Titulo": "Introducción a la Ciencia de Datos",
+    "Institucion": "Santander",
+    "SrcIstitucion": "/Images/Cursos/logo-santander.png",
+    "Expedicion": "Octubre 2025",
+    "SrcCertificado": "/Images/Certificados/Santander-Introducción-a-la-Ciencia-de-Datos_1.jpg",
+    "Status": "Done"
+  },
+  {
+    "id": 7,
+    "Titulo": "Power BI",
+    "Institucion": "Santander",
+    "SrcIstitucion": "/Images/Cursos/logo-santander.png",
+    "Expedicion": "Octubre 2025",
+    "SrcCertificado": "/Images/Certificados/Santander-Power-BI.jpg",
+    "Status": "Done"
+  },
+  {
+    "id": 6,
+    "Titulo": "Gestión de Proyectos y Fundamentos de Metodologías Ágiles",
+    "Institucion": "Santander",
+    "SrcIstitucion": "/Images/Cursos/logo-santander.png",
+    "Expedicion": "Septiembre 2025",
+    "SrcCertificado": "/Images/Certificados/Santander-Gestión-de-Proyectos-y-Fundamentos-de-metodología-Agiles.jpg",
+    "Status": "Done"
+  },
+  {
+    "id": 5,
+    "Titulo": "RPA Developer",
+    "Institucion": "SS&C Blue Prism",
+    "SrcIstitucion": "/Images/Cursos/logo-blueprism.png",
+    "Expedicion": "Julio 2023",
+    "SrcCertificado": "https://www.credly.com/badges/27a5180e-1e7b-496d-a984-4d302eb067d6/public_url",
+    "Status": "Done"
+  },
+  {
+    "id": 4,
+    "Titulo": "Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean",
+    "Institucion": "Telefónica",
+    "SrcIstitucion": "/Images/Cursos/logo-telefonica.jpg",
+    "Expedicion": "Febrero 2023",
+    "SrcCertificado": "/Images/Certificados/Telefónica-Movistar-Gestión-de-Proyectos-con-Metodologías-Ágiles-y-Enfoques-Lean.jpg",
+    "Status": "Done"
+  },
+  {
+    "id": 3,
+    "Titulo": "Introducción a la Ciberseguridad",
+    "Institucion": "Telefónica",
+    "SrcIstitucion": "/Images/Cursos/logo-telefonica.jpg",
+    "Expedicion": "Febrero 2023",
+    "SrcCertificado": "/Images/Certificados/Telefónica-Movistar-Introducción-a-Ciberseguridad.jpg",
+    "Status": "Done"
+  },
+  {
+    "id": 2,
+    "Titulo": "RPA Developer",
+    "Institucion": "Arkademy",
+    "SrcIstitucion": "/Images/Cursos/logo-arkademy.png",
+    "Expedicion": "Febrero 2023",
+    "SrcCertificado": "/Images/Certificados/Arkademy-RPA-Develope.jpg",
+    "Status": "Done"
+  },
+  {
+    "id": 1,
+    "Titulo": "Programación Básica",
+    "Institucion": "Platzi",
+    "SrcIstitucion": "/Images/Cursos/logo-platzi.jpg",
+    "Expedicion": "Septiembre 2019",
+    "SrcCertificado": "/Images/Certificados/Platzi-Programación-Basica_page.jpg",
+    "Status": "Done"
+  }
+]

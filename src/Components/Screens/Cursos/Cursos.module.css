@@ -1,0 +1,173 @@
+.filtersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.85rem;
+}
+
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 20.5rem), 1fr));
+  gap: 1.35rem;
+}
+
+.courseCard {
+  padding: 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.15rem;
+  height: 100%;
+}
+
+.courseCard:hover {
+  transform: translateY(-4px);
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.instBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.instLogoWrapper {
+  width: 2.85rem;
+  height: 2.85rem;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  padding: 0.35rem;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.instLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.instName {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.expedicion {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+}
+
+.courseTitle {
+  font-size: 1.06rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+  flex: 1;
+}
+
+.cardActions {
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.actionGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.certButtonModal,
+.certButtonExternal {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 0.7rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  background: linear-gradient(
+    135deg var(--in-oklch),
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.certButtonModal:hover,
+.certButtonExternal:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.openTabBtn {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.7rem;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-chip);
+  color: var(--accent-primary);
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.openTabBtn:hover {
+  background: var(--accent-primary);
+  color: #ffffff;
+}
+
+.inProgressNotice {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--accent-amber);
+  text-align: center;
+  padding: 0.45rem;
+  border-radius: 0.65rem;
+  background: color-mix(in oklab, var(--accent-amber) 12%, transparent);
+}
+
+.previewModalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.certificateFrame {
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  background: #0b0f19;
+}
+
+.certificateImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.previewModalActions {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}

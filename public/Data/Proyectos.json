@@ -1,0 +1,202 @@
+[
+  {
+    "id": "6",
+    "Nombre": "Convert Text to Audio",
+    "FechaInicio": "Octubre 2025",
+    "FechaFin": "Actualidad",
+    "Src": "/Images/Proyectos/convert.png",
+    "Descrpcion": "Conversor - Text to Audio es una aplicación web full-stack diseñada para convertir texto en voz de alta calidad. La aplicación consta de dos componentes principales: Backend (API): Un servicio de API de alto rendimiento construido en Python con FastAPI. Se encarga de la lógica de negocio, utilizando gTTS (Google Text-to-Speech) para generar los archivos de audio. Frontend (UI): Una interfaz de usuario moderna y reactiva (SPA) construida con React y Vite. Permite a los usuarios interactuar con la API de forma intuitiva, proveyendo texto y seleccionando opciones dinámicas.",
+    "Links": [
+      {
+        "Nombre": "GitHub - BackEnd",
+        "Link": "https://github.com/AugustoComeglio/ConversorTextToAudio-BackEnd"
+      },
+      {
+        "Nombre": "GitHub - FrontEnd",
+        "Link": "https://github.com/AugustoComeglio/ConversorTextToAudio-FrontEnd"
+      }
+    ],
+    "Herramientas": [
+      {
+        "Nombre": "React",
+        "Src": "/Images/Herramientas/react_light.svg"
+      },
+      {
+        "Nombre": "Vite",
+        "Src": "/Images/Herramientas/vitejs.svg"
+      },
+      {
+        "Nombre": "Python",
+        "Src": "/Images/Herramientas/python.svg"
+      },
+      {
+        "Nombre": "FastAPI",
+        "Src": "/Images/Herramientas/No/fastapi.svg"
+      },
+      {
+        "Nombre": "Uvicorn",
+        "Src": "/Images/Herramientas/No/uvicorn.png"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "Nombre": "Personal Website v2",
+    "FechaInicio": "Septiembre 2025",
+    "FechaFin": "Actualidad",
+    "Src": "/Images/Proyectos/Web2.png",
+    "Descrpcion": "Este proyecto es una aplicación web de página única (SPA) desarrollada con React y Vite, diseñada para funcionar como un portafolio personal. El sitio presenta información sobre mi experiencia profesional, educación, cursos realizados, habilidades técnicas y formas de contacto.",
+    "Links": [
+      {
+        "Nombre": "GitHub - BackEnd",
+        "Link": "https://github.com/AugustoComeglio/ConversorTextToAudio-BackEnd"
+      },
+      {
+        "Nombre": "GitHub - FrontEnd",
+        "Link": "https://github.com/AugustoComeglio/ConversorTextToAudio-FrontEnd"
+      }
+    ],
+    "Herramientas": [
+      {
+        "Nombre": "React",
+        "Src": "/Images/Herramientas/react_light.svg"
+      },
+      {
+        "Nombre": "Vite",
+        "Src": "/Images/Herramientas/vitejs.svg"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "Nombre": "Personal Website",
+    "FechaInicio": "Enero 2021",
+    "FechaFin": "Septiembre 2025",
+    "Src": "/Images/Proyectos/Web1.png",
+    "Descrpcion": "Este proyecto es mi sitio web personal, diseñado para mostrar mi información profesional y proyectos. El sitio web sirve como un currículum interactivo donde los visitantes pueden aprender sobre mi educación, experiencia laboral, habilidades y proyectos en los que he trabajado.",
+    "Links": [
+      {
+        "Nombre": "GitHub",
+        "Link": "https://github.com/AugustoComeglio/PersonalWebsite"
+      },
+      {
+        "Nombre": "Web",
+        "Link": "https://augustocomeglio.netlify.app/"
+      }
+    ],
+    "Herramientas": [
+      {
+        "Nombre": "JavaScript",
+        "Src": "/Images/Herramientas/javascript.svg"
+      },
+      {
+        "Nombre": "HTML5",
+        "Src": "/Images/Herramientas/html5.svg"
+      },
+      {
+        "Nombre": "CSS3",
+        "Src": "/Images/Herramientas/css_old.svg"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "Nombre": "Traductor Neuronal (Seq2Seq Transformer)",
+    "FechaInicio": "Junio 2024",
+    "FechaFin": "Agosto 2024",
+    "Src": "/Images/Proyectos/Traductor.png",
+    "Descrpcion": "Este proyecto es un traductor automático de inglés a español basado en un modelo de red neuronal Seq2Seq con una arquitectura de Transformer. El modelo es capaz de recibir una oración en inglés y devolver su traducción al español.",
+    "Links": [
+      {
+        "Nombre": "GitHub",
+        "Link": "https://github.com/AugustoComeglio/Traductor"
+      }
+    ],
+    "Herramientas": [
+      {
+        "Nombre": "Python",
+        "Src": "/Images/Herramientas/python.svg"
+      },
+      {
+        "Nombre": "PyTorch",
+        "Src": "/Images/Herramientas/No/pytorch-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "FastAPI",
+        "Src": "/Images/Herramientas/No/fastapi.svg"
+      },
+      {
+        "Nombre": "Streamlit",
+        "Src": "/Images/Herramientas/No/streamlit.svg"
+      },
+      {
+        "Nombre": "Uvicorn",
+        "Src": "/Images/Herramientas/No/uvicorn.png"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "Nombre": "CtrlFleet",
+    "FechaInicio": "Enero 2023",
+    "FechaFin": "Diciembre 2023",
+    "Src": "/Images/Proyectos/ctrlfleet.png",
+    "Descrpcion": "CtrlFleet es un sistema de gestión de flotas robusto y fácil de usar, compuesto por un frontend Angular que ofrece una interfaz de usuario moderna e interactiva, y un backend en Ruby on Rails que expone una API RESTful para manejar la lógica de negocio y la persistencia de datos.",
+    "Links": [
+      {
+        "Nombre": "GitHub - BackEnd",
+        "Link": "https://github.com/AugustoComeglio/CtrlFleet-BackEnd"
+      },
+      {
+        "Nombre": "GitHub - FrontEnd",
+        "Link": "https://github.com/AugustoComeglio/CtrlFleet-FrontEnd"
+      }
+    ],
+    "Herramientas": [
+      {
+        "Nombre": "Angular",
+        "Src": "/Images/Herramientas/angular-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "TypeScript",
+        "Src": "/Images/Herramientas/No/typescript-icon-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "Ruby",
+        "Src": "/Images/Herramientas/No/ruby-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "PostgreSQL",
+        "Src": "/Images/Herramientas/No/postgresql-logo-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "Docker",
+        "Src": "/Images/Herramientas/No/docker-svgrepo-com.svg"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "Nombre": "Mesa de Ayuda",
+    "FechaInicio": "Enero 2020",
+    "FechaFin": "Diciembre 2020",
+    "Src": "/Images/Proyectos/utn.png",
+    "Descrpcion": "Este proyecto es un sistema de escritorio para la gestión de una Mesa de Ayuda, desarrollado como parte de un proyecto universitario. La aplicación permite administrar y configurar los flujos de trabajo para la resolución de incidencias, optimizando el soporte y la asignación de tareas dentro de una organización. El sistema está diseñado para ser modular y escalable, permitiendo una gestión detallada de los diferentes componentes que intervienen en un proceso de soporte, como la definición de tipos de casos, la asignación a sectores específicos y la configuración de las tareas e instancias que componen cada flujo.",
+    "Links": [
+      {
+        "Nombre": "GitHub",
+        "Link": "https://github.com/AugustoComeglio/Mesa_ayuda"
+      }
+    ],
+    "Herramientas": [
+      {
+        "Nombre": "Java",
+        "Src": "/Images/Herramientas/java-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "MySQL",
+        "Src": "/Images/Herramientas/mysql-logo-svgrepo-com.svg"
+      }
+    ]
+  }
+]

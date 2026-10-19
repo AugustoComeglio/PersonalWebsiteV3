@@ -1,0 +1,170 @@
+[
+  {
+    "Id": 6,
+    "Tipo": "RPA & Automatización",
+    "Herramientas": [
+      {
+        "Nombre": "Blue Prism",
+        "Src": "/Images/Herramientas/blue-prism.svg"
+      },
+      {
+        "Nombre": "Power Automate",
+        "Src": "/Images/Herramientas/power-automate.svg"
+      }
+    ]
+  },
+  {
+    "Id": 5,
+    "Tipo": "Back End",
+    "Herramientas": [
+      {
+        "Nombre": "Java",
+        "Src": "/Images/Herramientas/java-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "Python",
+        "Src": "/Images/Herramientas/python.svg"
+      },
+      {
+        "Nombre": "C#",
+        "Src": "/Images/Herramientas/csharp.svg"
+      },
+      {
+        "Nombre": "Node.js",
+        "Src": "/Images/Herramientas/node-js-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "Spring",
+        "Src": "/Images/Herramientas/spring.svg"
+      }
+    ]
+  },
+  {
+    "Id": 4,
+    "Tipo": "Front End",
+    "Herramientas": [
+      {
+        "Nombre": "HTML5",
+        "Src": "/Images/Herramientas/html5.svg"
+      },
+      {
+        "Nombre": "CSS3",
+        "Src": "/Images/Herramientas/css_old.svg"
+      },
+      {
+        "Nombre": "JavaScript",
+        "Src": "/Images/Herramientas/javascript.svg"
+      },
+      {
+        "Nombre": "React",
+        "Src": "/Images/Herramientas/react_light.svg"
+      },
+      {
+        "Nombre": "Bootstrap",
+        "Src": "/Images/Herramientas/bootstrap.svg"
+      },
+      {
+        "Nombre": "Vite.js",
+        "Src": "/Images/Herramientas/vitejs.svg"
+      },
+      {
+        "Nombre": "Angular",
+        "Src": "/Images/Herramientas/angular-svgrepo-com.svg"
+      }
+    ]
+  },
+  {
+    "Id": 3,
+    "Tipo": "Herramientas de Desarrollo",
+    "Herramientas": [
+      {
+        "Nombre": "Visual Studio Code",
+        "Src": "/Images/Herramientas/vscode.svg"
+      },
+      {
+        "Nombre": "IntelliJ IDEA",
+        "Src": "/Images/Herramientas/intellijidea.svg"
+      },
+      {
+        "Nombre": "Eclipse",
+        "Src": "/Images/Herramientas/eclipse.svg"
+      },
+      {
+        "Nombre": "Git",
+        "Src": "/Images/Herramientas/git.svg"
+      },
+      {
+        "Nombre": "GitHub",
+        "Src": "/Images/Herramientas/github_light.svg"
+      },
+      {
+        "Nombre": "Netlify",
+        "Src": "/Images/Herramientas/netlify.svg"
+      },
+      {
+        "Nombre": "Postman",
+        "Src": "/Images/Herramientas/postman.svg"
+      }
+    ]
+  },
+  {
+    "Id": 2,
+    "Tipo": "Bases de Datos y Gestión de Datos",
+    "Herramientas": [
+      {
+        "Nombre": "MySQL",
+        "Src": "/Images/Herramientas/mysql-logo-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "Power BI",
+        "Src": "/Images/Herramientas/power-bi.svg"
+      }
+    ]
+  },
+  {
+    "Id": 1,
+    "Tipo": "Productividad",
+    "Herramientas": [
+      {
+        "Nombre": "Microsoft Excel",
+        "Src": "/Images/Herramientas/ms-excel-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "Notion",
+        "Src": "/Images/Herramientas/notion.svg"
+      },
+      {
+        "Nombre": "Microsoft OneDrive",
+        "Src": "/Images/Herramientas/microsoft-onedrive.svg"
+      },
+      {
+        "Nombre": "Microsoft SharePoint",
+        "Src": "/Images/Herramientas/ms-sharepoint-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "Microsoft Teams",
+        "Src": "/Images/Herramientas/microsoft-teams.svg"
+      },
+      {
+        "Nombre": "Google Drive",
+        "Src": "/Images/Herramientas/drive.svg"
+      },
+      {
+        "Nombre": "Figma",
+        "Src": "/Images/Herramientas/figma-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "Jira",
+        "Src": "/Images/Herramientas/jira-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "Trello",
+        "Src": "/Images/Herramientas/trello-svgrepo-com.svg"
+      },
+      {
+        "Nombre": "Azure DevOps",
+        "Src": "/Images/Herramientas/azure-devops-svgrepo-com.svg"
+      }
+    ]
+  }
+]

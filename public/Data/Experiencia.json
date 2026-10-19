@@ -1,0 +1,119 @@
+[
+  {
+    "id": 5,
+    "Puesto": "RPA Developer Senior",
+    "Empresa": "Ctrl365",
+    "Modalidad": "Remoto",
+    "FechaInicio": "Octubre 2024",
+    "FechaFin": "Actualidad",
+    "Web": "https://ctrl365.com/",
+    "Proyecto": "Allfunds (España) – Galicia Seguros",
+    "TareasLista": [
+      "Liderazgo de reuniones y comunicación efectiva en el relevamiento de procesos directamente con usuarios clave para identificar oportunidades de mejora operativa.",
+      "Desarrollo y documentación técnica integral de procesos RPA (PDD, SDD, entre otros).",
+      "Implementación en producción de automatizaciones que optimizan el trabajo manual y ejecución de su mantenimiento correctivo/evolutivo.",
+      "Definición y aplicación del ciclo de vida del software, estándares de buenas prácticas y code reviews para asegurar la calidad y escalabilidad del código.",
+      "Desarrollo de objetos personalizados en C# e integraciones de sistemas a través de APIs y bases de datos (SQL).",
+      "Diseño, definición y ejecución de pruebas unitarias e integrales."
+    ],
+    "Tareas": "Liderazgo de reuniones y comunicación efectiva en el relevamiento de procesos directamente con usuarios clave para identificar oportunidades de mejora operativa. Desarrollo y documentación técnica integral de procesos RPA (PDD, SDD, entre otros). Implementación en producción de automatizaciones que optimizan el trabajo manual y ejecución de su mantenimiento correctivo/evolutivo. Definición y aplicación del ciclo de vida del software, estándares de buenas prácticas y code reviews para asegurar la calidad y escalabilidad del código. Desarrollo de objetos personalizados en C# e integraciones de sistemas a través de APIs y bases de datos (SQL). Diseño, definición y ejecución de pruebas unitarias e integrales.",
+    "tags": [
+      "Blue Prism",
+      "Power Automate",
+      "Microsoft Copilot Studio",
+      "C#",
+      "APIs & SQL"
+    ],
+    "Src": "/Images/Experiencia/logo-ctrl365.jpeg"
+  },
+  {
+    "id": 4,
+    "Puesto": "RPA Developer Semi Senior",
+    "Empresa": "Ctrl365",
+    "Modalidad": "Remoto",
+    "FechaInicio": "Agosto 2023",
+    "FechaFin": "Septiembre 2024",
+    "Web": "https://ctrl365.com/",
+    "Proyecto": "Banco Santander (Chile)",
+    "TareasLista": [
+      "Participación activa en reuniones con clientes para la toma y gestión eficiente de requerimientos.",
+      "Colaboración estratégica en el relevamiento de procesos para la identificación de oportunidades de automatización.",
+      "Desarrollo y confección de documentación técnica (PDD, SDD) asegurando trazabilidad.",
+      "Ejecución de pruebas unitarias e integrales para garantizar la estabilidad del software en entornos financieros."
+    ],
+    "Tareas": "Participación activa en reuniones con clientes para la toma y gestión eficiente de requerimientos. Colaboración estratégica en el relevamiento de procesos para la identificación de oportunidades de automatización. Desarrollo y confección de documentación técnica (PDD, SDD) asegurando trazabilidad. Ejecución de pruebas unitarias e integrales para garantizar la estabilidad del software en entornos financieros.",
+    "tags": [
+      "Blue Prism",
+      "Relevamiento de Procesos",
+      "Documentación PDD/SDD",
+      "Pruebas Unitarias e Integrales"
+    ],
+    "Src": "/Images/Experiencia/logo-ctrl365.jpeg"
+  },
+  {
+    "id": 3,
+    "Puesto": "RPA Developer Junior",
+    "Empresa": "Ctrl365",
+    "Modalidad": "Remoto",
+    "FechaInicio": "Febrero 2023",
+    "FechaFin": "Julio 2023",
+    "Web": "https://ctrl365.com/",
+    "Proyecto": "Desarrollos Internos",
+    "TareasLista": [
+      "Desarrollo y documentación de procesos RPA siguiendo estrictos estándares establecidos.",
+      "Ejecución de pruebas para la validación funcional de flujos.",
+      "Resolución ágil de incidentes, mantenimiento y soporte de automatizaciones internas."
+    ],
+    "Tareas": "Desarrollo y documentación de procesos RPA siguiendo estrictos estándares establecidos. Ejecución de pruebas para la validación funcional de flujos. Resolución ágil de incidentes, mantenimiento y soporte de automatizaciones internas.",
+    "tags": [
+      "Blue Prism",
+      "Estándares RPA",
+      "Validación Funcional",
+      "Soporte & Mantenimiento"
+    ],
+    "Src": "/Images/Experiencia/logo-ctrl365.jpeg"
+  },
+  {
+    "id": 2,
+    "Puesto": "Soporte Técnico",
+    "Empresa": "Radio Tantanakuy",
+    "Modalidad": "Remoto",
+    "FechaInicio": "Agosto 2022",
+    "FechaFin": "Actualidad",
+    "Web": "http://www.radiotantanakuy.com/",
+    "Proyecto": "-",
+    "TareasLista": [
+      "Mantenimiento integral de PCs, consolas de audio y administración de servidores de streaming.",
+      "Resolución de problemas técnicos garantizando la continuidad del servicio."
+    ],
+    "Tareas": "Mantenimiento integral de PCs, consolas de audio y administración de servidores de streaming. Resolución de problemas técnicos garantizando la continuidad del servicio.",
+    "tags": [
+      "Servidores de Streaming",
+      "Consolas de Audio",
+      "Mantenimiento de PCs",
+      "Soporte Técnico"
+    ],
+    "Src": "/Images/Experiencia/logo-radiotantanakuy.jpg"
+  },
+  {
+    "id": 1,
+    "Puesto": "Soporte Técnico y Desarrollo Web",
+    "Empresa": "Radio Unidos por el Mundo",
+    "Modalidad": "Híbrido",
+    "FechaInicio": "Mayo 2020",
+    "FechaFin": "Agosto 2024",
+    "Web": "https://unidosporelmundo.radiodigitales.com/",
+    "Proyecto": "-",
+    "TareasLista": [
+      "Diseño, desarrollo y mantenimiento continuo del sitio web.",
+      "Mantenimiento de infraestructura de hardware (PCs) y soporte a usuarios."
+    ],
+    "Tareas": "Diseño, desarrollo y mantenimiento continuo del sitio web. Mantenimiento de infraestructura de hardware (PCs) y soporte a usuarios.",
+    "tags": [
+      "Desarrollo Web",
+      "Infraestructura de Hardware",
+      "Soporte a Usuarios"
+    ],
+    "Src": "/Images/Experiencia/logo-uxem.png"
+  }
+]

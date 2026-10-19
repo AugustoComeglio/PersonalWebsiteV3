@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "Institucion": "Universidad Tecnológica Nacional - FRM",
+    "Carrera": "Ingeniería en Sistemas de Información",
+    "FechaInicio": "2016",
+    "FechaFin": "2026",
+    "Src": "/Images/Educacion/logo-utn.png",
+    "Status": "Done"
+  },
+  {
+    "id": 1,
+    "Institucion": "Colegio San Pío X - P-43",
+    "Carrera": "Administración y Gestión de Empresas",
+    "FechaInicio": "2011",
+    "FechaFin": "2015",
+    "Src": "/Images/Educacion/logo-sanpio.png",
+    "Status": "Done"
+  }
+]

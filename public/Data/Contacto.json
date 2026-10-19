@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "Tipo": "Email",
+    "Valor": "augustoc.98@gmail.com",
+    "Link": "mailto:augustoc.98@gmail.com",
+    "Icono": "/Images/Contacto/email.png"
+  },
+  {
+    "id": 2,
+    "Tipo": "Teléfono / WhatsApp",
+    "Valor": "+54 2634565031",
+    "Link": "https://wa.me/542634565031",
+    "Icono": "/Images/Contacto/telefono.png"
+  },
+  {
+    "id": 3,
+    "Tipo": "LinkedIn",
+    "Valor": "Augusto Comeglio",
+    "Link": "https://www.linkedin.com/in/augusto-comeglio-b99b47213/",
+    "Icono": "/Images/Contacto/linkedin.png"
+  },
+  {
+    "id": 4,
+    "Tipo": "GitHub",
+    "Valor": "AugustoComeglio",
+    "Link": "https://github.com/AugustoComeglio",
+    "Icono": "/Images/Contacto/github.png"
+  }
+]

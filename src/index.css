@@ -1,0 +1,582 @@
+/* Register spotlight inner and outer sizes for smooth radial-gradient mask interpolation */
+@property --inner-size {
+  syntax: "<length-percentage>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+@property --outer-size {
+  syntax: "<length-percentage>";
+  inherits: true;
+  initial-value: 0px;
+}
+
+:root {
+  /* MANDATORY: Automatically adapt native UI to user system preferences */
+  color-scheme: light dark;
+
+  &:has(> head > meta[name="color-scheme"][content="dark"]) {
+    color-scheme: dark;
+  }
+
+  &:has(> head > meta[name="color-scheme"][content="light"]) {
+    color-scheme: light;
+  }
+
+  /* MANDATORY: Enable intrinsic keyword transitions (e.g. block-size: 0 -> auto) */
+  interpolate-size: allow-keywords;
+
+  /* Safe OKLCH/OKLAB gradient interpolation tokens */
+  --in-oklab: ;
+  --in-oklch: ;
+
+  /* Raw Light / Dark palette tokens */
+  --bg-canvas-light: #f6f8fc;
+  --bg-canvas-dark: #070a12;
+
+  --bg-elevated-light: rgba(255, 255, 255, 0.82);
+  --bg-elevated-dark: rgba(15, 21, 35, 0.72);
+
+  --bg-card-light: rgba(255, 255, 255, 0.9);
+  --bg-card-dark: rgba(17, 24, 39, 0.68);
+
+  --bg-glass-light: rgba(255, 255, 255, 0.76);
+  --bg-glass-dark: rgba(11, 16, 28, 0.76);
+
+  --bg-chip-light: rgba(14, 116, 144, 0.08);
+  --bg-chip-dark: rgba(56, 189, 248, 0.1);
+
+  --text-primary-light: #0b1120;
+  --text-primary-dark: #f1f5f9;
+
+  --text-secondary-light: #334155;
+  --text-secondary-dark: #94a3b8;
+
+  --text-muted-light: #64748b;
+  --text-muted-dark: #64748b;
+
+  --accent-primary-light: #0284c7;
+  --accent-primary-dark: #38bdf8;
+
+  --accent-secondary-light: #6366f1;
+  --accent-secondary-dark: #818cf8;
+
+  --accent-emerald-light: #059669;
+  --accent-emerald-dark: #34d399;
+
+  --accent-amber-light: #d97706;
+  --accent-amber-dark: #fbbf24;
+
+  --border-subtle-light: rgba(15, 23, 42, 0.09);
+  --border-subtle-dark: rgba(148, 163, 184, 0.14);
+
+  --border-glow-light: rgba(2, 132, 199, 0.35);
+  --border-glow-dark: rgba(56, 189, 248, 0.42);
+
+  --scrollbar-track-light: #e2e8f0;
+  --scrollbar-track-dark: #0f172a;
+  --scrollbar-thumb-light: #94a3b8;
+  --scrollbar-thumb-dark: #334155;
+
+  /* Default fallback assignments (light) */
+  --bg-canvas: var(--bg-canvas-light);
+  --bg-elevated: var(--bg-elevated-light);
+  --bg-card: var(--bg-card-light);
+  --bg-glass: var(--bg-glass-light);
+  --bg-chip: var(--bg-chip-light);
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --text-muted: var(--text-muted-light);
+  --accent-primary: var(--accent-primary-light);
+  --accent-secondary: var(--accent-secondary-light);
+  --accent-emerald: var(--accent-emerald-light);
+  --accent-amber: var(--accent-amber-light);
+  --border-subtle: var(--border-subtle-light);
+  --border-glow: var(--border-glow-light);
+  --scrollbar-track: var(--scrollbar-track-light);
+  --scrollbar-thumb: var(--scrollbar-thumb-light);
+
+  /* MANDATORY: Fallback for browsers without light-dark() support */
+  @media (prefers-color-scheme: dark) {
+    --bg-canvas: var(--bg-canvas-dark);
+    --bg-elevated: var(--bg-elevated-dark);
+    --bg-card: var(--bg-card-dark);
+    --bg-glass: var(--bg-glass-dark);
+    --bg-chip: var(--bg-chip-dark);
+    --text-primary: var(--text-primary-dark);
+    --text-secondary: var(--text-secondary-dark);
+    --text-muted: var(--text-muted-dark);
+    --accent-primary: var(--accent-primary-dark);
+    --accent-secondary: var(--accent-secondary-dark);
+    --accent-emerald: var(--accent-emerald-dark);
+    --accent-amber: var(--accent-amber-dark);
+    --border-subtle: var(--border-subtle-dark);
+    --border-glow: var(--border-glow-dark);
+    --scrollbar-track: var(--scrollbar-track-dark);
+    --scrollbar-thumb: var(--scrollbar-thumb-dark);
+  }
+
+  /* Modern automatic light-dark() resolution */
+  @supports (color: light-dark(white, black)) {
+    --bg-canvas: light-dark(var(--bg-canvas-light), var(--bg-canvas-dark));
+    --bg-elevated: light-dark(var(--bg-elevated-light), var(--bg-elevated-dark));
+    --bg-card: light-dark(var(--bg-card-light), var(--bg-card-dark));
+    --bg-glass: light-dark(var(--bg-glass-light), var(--bg-glass-dark));
+    --bg-chip: light-dark(var(--bg-chip-light), var(--bg-chip-dark));
+    --text-primary: light-dark(var(--text-primary-light), var(--text-primary-dark));
+    --text-secondary: light-dark(var(--text-secondary-light), var(--text-secondary-dark));
+    --text-muted: light-dark(var(--text-muted-light), var(--text-muted-dark));
+    --accent-primary: light-dark(var(--accent-primary-light), var(--accent-primary-dark));
+    --accent-secondary: light-dark(var(--accent-secondary-light), var(--accent-secondary-dark));
+    --accent-emerald: light-dark(var(--accent-emerald-light), var(--accent-emerald-dark));
+    --accent-amber: light-dark(var(--accent-amber-light), var(--accent-amber-dark));
+    --border-subtle: light-dark(var(--border-subtle-light), var(--border-subtle-dark));
+    --border-glow: light-dark(var(--border-glow-light), var(--border-glow-dark));
+    --scrollbar-track: light-dark(var(--scrollbar-track-light), var(--scrollbar-track-dark));
+    --scrollbar-thumb: light-dark(var(--scrollbar-thumb-light), var(--scrollbar-thumb-dark));
+  }
+
+  /* Layered shadows for realistic depth */
+  --shadow-card:
+    0 1px 2px rgba(0, 0, 0, 0.06),
+    0 8px 24px -4px rgba(0, 0, 0, 0.14),
+    0 20px 48px -12px rgba(2, 132, 199, 0.08);
+  --shadow-card-hover:
+    0 2px 6px rgba(0, 0, 0, 0.08),
+    0 16px 36px -6px rgba(2, 132, 199, 0.18),
+    0 32px 64px -16px rgba(99, 102, 241, 0.16);
+
+  /* Typography families */
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Native UI customization */
+  accent-color: var(--accent-primary);
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+@supports (background: linear-gradient(in oklab, white, black)) {
+  :root {
+    --in-oklab: in oklab;
+    --in-oklch: in oklch;
+  }
+}
+
+/* Legacy fallback for WebKit/Blink browsers without scrollbar-color */
+@supports not (scrollbar-color: auto) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%; /* Respect OS text scale preferences */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  line-height: 1.6; /* Unitless line-height for accessible scaling */
+  text-align: start;
+  overflow-x: hidden;
+  min-height: 100dvh;
+  position: relative;
+  isolation: isolate;
+}
+
+::selection {
+  background-color: color-mix(in oklab, var(--accent-primary) 28%, transparent);
+  color: var(--text-primary);
+}
+
+/* Typography Rules */
+h1,
+h2,
+h3,
+.heading-balance {
+  font-family: var(--font-display);
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+  max-width: 78ch;
+  overflow-wrap: break-word;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  overflow-wrap: break-word;
+}
+
+/* Ambient Background Mesh & Subtle Dot Grid */
+.ambient-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  isolation: isolate;
+  --dot-color: color-mix(in oklab, var(--text-secondary) 14%, transparent);
+  --dot-space: 1.75rem;
+  --dot-radius: 0.065rem;
+  --polka: radial-gradient(
+    circle,
+    var(--dot-color) var(--dot-radius),
+    transparent calc(var(--dot-radius) + 1px)
+  );
+  background-image:
+    radial-gradient(
+      circle at 15% 15%,
+      color-mix(in oklab, var(--accent-primary) 16%, transparent) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      color-mix(in oklab, var(--accent-secondary) 15%, transparent) 0%,
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 50% 85%,
+      color-mix(in oklab, var(--accent-emerald) 10%, transparent) 0%,
+      transparent 50%
+    ),
+    var(--polka);
+  background-size: 100% 100%, 100% 100%, 100% 100%, var(--dot-space) var(--dot-space);
+}
+
+/* Interactive Pointer Spotlight Reveal Layer */
+.spotlight-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(16px);
+  transition:
+    transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  isolation: isolate;
+}
+
+.spotlight-container:hover {
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.reveal-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg var(--in-oklch),
+    color-mix(in oklab, var(--accent-primary) 22%, transparent),
+    color-mix(in oklab, var(--accent-secondary) 22%, transparent)
+  );
+  transition: --inner-size 0.25s ease-in-out, --outer-size 0.25s ease-in-out;
+  -webkit-mask-image: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    black var(--inner-size, 0%),
+    transparent var(--outer-size, 0%)
+  );
+  mask-image: radial-gradient(
+    circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    black var(--inner-size, 0%),
+    transparent var(--outer-size, 0%)
+  );
+  mask-repeat: no-repeat;
+}
+
+.spotlight-container:hover > .reveal-layer {
+  --inner-size: 20px;
+  --outer-size: 260px;
+}
+
+.spotlight-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-wrap: inherit;
+  gap: inherit;
+}
+
+/* Native Modal Dialog (<dialog closedby="any">) */
+dialog.premium-dialog {
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--border-glow);
+  border-radius: 1.5rem;
+  background: var(--bg-elevated);
+  color: var(--text-primary);
+  max-width: min(92vw, 56rem);
+  width: 100%;
+  max-height: 88dvh;
+  overflow: hidden;
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.45),
+    0 0 0 1px var(--border-subtle);
+  backdrop-filter: blur(24px);
+}
+
+dialog.premium-dialog::backdrop {
+  background-color: rgba(4, 7, 17, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+/* Intrinsic-size expandable container (for accordions & details) */
+.expandable-panel {
+  block-size: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    block-size 0.38s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.3s ease;
+}
+
+.expandable-panel.is-expanded {
+  block-size: auto;
+  opacity: 1;
+}
+
+/* Scroll-Driven Entry Animations (Progressive Enhancement) */
+@media (prefers-reduced-motion: no-preference) {
+  @supports ((animation-timeline: view()) and (animation-range: entry)) {
+    @keyframes scroll-reveal-up {
+      from {
+        opacity: 0.15;
+        transform: translateY(1.75rem) scale(0.97);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    .scroll-reveal {
+      animation: scroll-reveal-up auto ease-out backwards;
+      animation-timeline: view();
+      animation-range: entry 5% cover 24%;
+    }
+  }
+}
+
+/* MANDATORY Copy-Paste Safety: Disable transitions/animations for motion-sensitive users */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal-layer,
+  .expandable-panel,
+  .spotlight-container {
+    transition: none !important;
+  }
+}
+
+/* Layout Utilities */
+.page-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.main-container {
+  width: min(100% - 2.5rem, 78rem);
+  margin-inline: auto;
+  flex: 1;
+  padding-block: 6.5rem 4rem;
+}
+
+.section-block {
+  padding-block: 3.5rem;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-bottom: 2.25rem;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 1.2rem + 2.2vw, 2.75rem);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.section-subtitle {
+  font-size: clamp(0.95rem, 0.9rem + 0.3vw, 1.1rem);
+  color: var(--text-secondary);
+  max-width: 65ch;
+}
+
+.gradient-text {
+  background: linear-gradient(
+    120deg var(--in-oklch),
+    var(--accent-primary),
+    var(--accent-secondary),
+    var(--accent-emerald)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Buttons & Pills */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.78rem 1.4rem;
+  border-radius: 0.85rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: linear-gradient(
+    135deg var(--in-oklch),
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 24px -4px color-mix(in oklab, var(--accent-primary) 45%, transparent);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 12px 28px -4px color-mix(in oklab, var(--accent-primary) 60%, transparent);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  padding: 0.78rem 1.35rem;
+  border-radius: 0.85rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-glow);
+  background: var(--bg-chip);
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.filter-pill {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-pill:hover {
+  color: var(--text-primary);
+  border-color: var(--border-glow);
+}
+
+.filter-pill.active {
+  background: linear-gradient(
+    135deg var(--in-oklch),
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  color: #ffffff;
+  border-color: transparent;
+  box-shadow: 0 4px 14px color-mix(in oklab, var(--accent-primary) 35%, transparent);
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.28rem 0.75rem;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status-badge.done {
+  background: color-mix(in oklab, var(--accent-emerald) 16%, transparent);
+  color: var(--accent-emerald);
+  border: 1px solid color-mix(in oklab, var(--accent-emerald) 35%, transparent);
+}
+
+.status-badge.in-progress {
+  background: color-mix(in oklab, var(--accent-amber) 16%, transparent);
+  color: var(--accent-amber);
+  border: 1px solid color-mix(in oklab, var(--accent-amber) 35%, transparent);
+}
+
+.status-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+}
