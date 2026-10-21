@@ -55,7 +55,7 @@ export const PERFIL_DATA = {
       detalle: "Ctrl365 · +3 años exp.",
     },
     {
-      valor: "15+",
+      valor: "16+",
       etiqueta: "Cursos y Certificaciones",
       detalle: "Blue Prism, Microsoft, Santander",
     },
@@ -227,6 +227,15 @@ export const EDUCACION_DATA = [
 ];
 
 export const CURSOS_DATA = [
+  {
+    id: 16,
+    Titulo: "WorkHQ Foundation",
+    Institucion: "SS&C Blue Prism",
+    SrcIstitucion: "/Images/Cursos/logo-blueprism.png",
+    Expedicion: "Octubre 2026",
+    SrcCertificado: "/Images/Certificados/BluePrism-WorkHQ-Foundation.jpg",
+    Status: "Done",
+  },
   {
     id: 15,
     Titulo:

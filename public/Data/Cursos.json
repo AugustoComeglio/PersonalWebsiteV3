@@ -1,5 +1,14 @@
 [
   {
+    "id": 16,
+    "Titulo": "WorkHQ Foundation",
+    "Institucion": "SS&C Blue Prism",
+    "SrcIstitucion": "/Images/Cursos/logo-blueprism.png",
+    "Expedicion": "Octubre 2026",
+    "SrcCertificado": "/Images/Certificados/BluePrism-WorkHQ-Foundation.jpg",
+    "Status": "Done"
+  },
+  {
     "id": 15,
     "Titulo": "Build Frontier Firm productivity with Work IQ, Copilot, & agents",
     "Institucion": "Microsoft",
